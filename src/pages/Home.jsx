@@ -30,17 +30,17 @@ const Home = () => {
             <div className="home__container container">
               <div className="home__data">
                 <h1 className="home__title">
-                  Crafting
-                  <span>flavor </span>
-                  with passion
+                  Créer de
+                  <span>la saveur </span>
+                  avec passion
                 </h1>
                 <p className="home__description">
-                  Find your perfect sip among our <br />
-                  diverse range of refreshments
+                Goûtez la différence
+        
                 </p>
                 {/* fix the hover */}
                 <a href="#" className="home__button">
-                  Details
+                Détails 
                 </a>
               </div>
 
@@ -76,10 +76,10 @@ const Home = () => {
 
               <div className="about-top">
 
-                <h2 className="h2 section-title">Our Commitment to Quality and Sustainability</h2>
+                <h2 className="h2 section-title">Notre engagement envers la qualité et la durabilité</h2>
 
                 <p className="section-text">
-                  At El Maida, we craft juice and milk products using only the freshest, most nutritious ingredients, and sustainable practices. From farm to bottle, we care about our customers, our employees, and the planet. Explore our range of delicious and refreshing products and discover the El Maida difference!
+                Chez El Maida, nous fabriquons des jus et des produits laitiers en utilisant seulement les ingrédients les plus frais et les plus nutritifs, ainsi que des pratiques durables. De la ferme à la bouteille, nous nous soucions de nos clients, de nos employés et de la planète. Explorez notre gamme de produits délicieux et rafraîchissants et découvrez la différence  !
                 </p>
 
                 <ul className="about-list">
@@ -87,7 +87,7 @@ const Home = () => {
                   <li>
                     <div id='first' className="about-card">
 
-                      <h3>When it comes to taste and quality, we don't compromise.</h3>
+                      <h3>En ce qui concerne le goût et la qualité, nous ne faisons aucun compromis .</h3>
                       <br />
 
 
@@ -96,15 +96,15 @@ const Home = () => {
 
                         <div className="front three">
 
-                          <h1 className="text-shadow">Quality</h1>
-                          <Link  className='btn-gradient-2' >
-                            LEARN MORE
+                          <h1 className="text-shadow">Qualité</h1>
+                          <Link className='btn-gradient-2' >
+                          EN SAVOIR PLUS
                           </Link>
                         </div>
 
                         <div className="back three">
                           <h2>Quality</h2>
-                          <p>We are committed to crafting high-quality juice and milk products that meet the highest standards of taste.</p>
+                          <p>Nous sommes engagés à élaborer des produits laitiers et des jus de haute qualité répondant aux normes de goût les plus élevées.</p>
                         </div>
                       </div>
 
@@ -116,7 +116,7 @@ const Home = () => {
                   <li>
                     <div id='second' className="about-card">
 
-                      <h3>Join us in our mission to protect the environment, one sip at a time.</h3>
+                      <h3>Rejoignez-nous dans notre mission de protéger l'environnement, une gorgée à la fois.</h3>
                       <br />
 
 
@@ -126,16 +126,16 @@ const Home = () => {
 
                         <div className="front two">
 
-                          <h1 className="text-shadow">Sustainability</h1>
+                          <h1 className="text-shadow">Durabilité</h1>
 
                           <Link id='btn2' className='btn-gradient-2' >
-                            LEARN MORE
+                          EN SAVOIR PLUS
                           </Link>
                         </div>
 
                         <div className="back two">
-                          <h2>Sustainability</h2>
-                          <p>We're committed to ethical and sustainable practices, from ingredients to packaging.</p>
+                          <h2>Durabilité</h2>
+                          <p>Nous sommes engagés dans des pratiques éthiques et durables, de la sélection des ingrédients à l'emballage.</p>
                         </div>
 
                       </div>
@@ -148,7 +148,7 @@ const Home = () => {
                     <div id='third' className="about-card">
 
 
-                      <h3>Choose health, choose El Maida.</h3>
+                      <h3>Choisissez la santé, choisissez El Maida.</h3>
                       <br />
                       <br />
                       <br />
@@ -158,15 +158,15 @@ const Home = () => {
 
                         <div className="front one">
 
-                          <h1 className="text-shadow">Health and wellness</h1>
-                          <Link  id='btn3' className='btn-gradient-2' >
-                            LEARN MORE
+                          <h1 className="text-shadow">Santé et bien-être</h1>
+                          <Link id='btn3' className='btn-gradient-2' >
+                          EN SAVOIR PLUS
                           </Link>
                         </div>
 
                         <div className="back one ">
-                          <h2>Health and wellness</h2>
-                          <p>Our products promote healthy, sustainable living with natural and nourishing ingredients.</p>
+                          <h2>Santé</h2>
+                          <p>Nos produits favorisent un mode de vie sain et durable grâce à des ingrédients naturels et nourrissants.</p>
                         </div>
 
                       </div>
@@ -185,15 +185,15 @@ const Home = () => {
 
                 <div className="about-bottom-content">
 
-                  <h2 className="h2 section-title">We’re obsessed with growth</h2>
+                  <h2 className="h2 section-title">La famille est notre priorité.</h2>
 
                   <p className="section-text">
-                    Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back into the
-                    development of
-                    the asset through its charitable foundation.
+                  la famille est notre priorité. Nous fabriquons nos produits laitiers et nos jus avec soin, en n'utilisant que les ingrédients les plus frais et les plus nutritifs. Que vous cherchiez un petit-déjeuner sain ou une boisson rafraîchissante pour toute la famille, nous avons ce qu'il vous faut.
                   </p>
 
-                  <button className="btn btn-secondary">Sign Up For Free</button>
+                  <Link  className="btn btn-secondary"  to="/About">
+                  Découvrez nous
+                </Link>
 
                 </div>
 

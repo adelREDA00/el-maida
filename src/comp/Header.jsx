@@ -1,10 +1,12 @@
-import { useState,useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import navImg from '../assets/nav-img.png'
 import MaidaLogo from '../assets/maidaLogo.png'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
 
 const Header = () => {
+
+  //activate link'../
   const location = useLocation();
 
   const [url, setUrl] = useState(null);
@@ -25,14 +27,11 @@ const Header = () => {
   /*=============== REMOVE MENU MOBILE ===============*/
   const navLink = document.querySelectorAll('.nav__link')
 
-    //activate link'../
-    const [link, setLink] = useState("HOME")
-    const linkAction = (e) => {
-      // When we click on each nav__link, we remove the show-menu class
-      navMeneuRef.current.classList.remove('show-menu')
 
-     
-    }
+  const linkAction = (e) => {
+    // When we click on each nav__link, we remove the show-menu class
+    navMeneuRef.current.classList.remove('show-menu')
+  }
 
 
   //active header when window scrolled to 50px
@@ -43,16 +42,14 @@ const Header = () => {
 
   //swiper react
   //https://reactjsexample.com/a-lightweight-carousel-component-for-react/
-  /*=============== fix MENU MOBILE ===============*/
-  const headerRef = useRef()
 
+  const headerRef = useRef();
 
   const activeHeader = function () {
-    window.scrollY > 50 ? headerRef.current.classList.add("active")
-      : headerRef.current.classList.remove("active");
-  }
-
-  window.addEventListener("scroll", activeHeader);
+    window.scrollY > 50
+      ? headerRef.current?.classList.add("active")
+      : headerRef.current?.classList.remove("active");
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", activeHeader);
@@ -60,7 +57,6 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", activeHeader);
     };
-
   }, []);
 
   return (
@@ -75,27 +71,27 @@ const Header = () => {
 
           <div ref={navMeneuRef} className="nav__menu" id='nav-menu' >
             <ul className="nav__list">
-              <li  className="nav__item">
+              <li className="nav__item">
                 <Link to="/">
-                  <a onClick={linkAction} className= {`nav__link ${url ==="/" ? 'active-link' : ''}`} >HOME</a>
+                  <a onClick={linkAction} className={`nav__link ${url === "/" ? 'active-link' : ''}`} >ACCUEIL </a>
                 </Link>
               </li>
               <li className="nav__item">
-                <Link  className= {`nav__link ${url ==="/About"  ? 'active-link' : ''}`} onClick={linkAction} to="/About">
-                ABOUT
+                <Link className={`nav__link ${url === "/About" ? 'active-link' : ''}`} onClick={linkAction} to="/About">
+                  À PROPOS
                 </Link>
 
               </li>
 
               <li className="nav__item">
-                <Link  className= {`nav__link ${url ==="/collections"  ? 'active-link' : ''}`} onClick={linkAction} to="/collections">
-                PRODUCTS
+                <Link className={`nav__link ${url === "/collections" ? 'active-link' : ''}`} onClick={linkAction} to="/collections">
+                  PRODUITS
                 </Link>
               </li>
 
               <li className="nav__item">
-                <Link  className= {`nav__link ${url ==="/contact" ? 'active-link' : ''}`} onClick={linkAction} to="/contact">
-                CONTACT
+                <Link className={`nav__link ${url === "/contact" ? 'active-link' : ''}`} onClick={linkAction} to="/contact">
+                  CONTACT
                 </Link>
               </li>
             </ul>

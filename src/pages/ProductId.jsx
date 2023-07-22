@@ -79,7 +79,7 @@ const fadeInUp = {
   
               <motion.div  onClick={handleLinkClick} variants={fadeInUp}>
       
-                <a className='go-back'><ion-icon name="chevron-back-outline"></ion-icon>Back</a>
+                <a className='go-back'><ion-icon name="chevron-back-outline"></ion-icon>Retour</a>
               </motion.div>
        
 
@@ -108,7 +108,7 @@ const fadeInUp = {
             </motion.div>
 
             <motion.div variants={fadeInUp} className='qty-price'>
-              <span className='price'><ion-icon name="restaurant-outline"></ion-icon>Ingredients</span>
+              <span className='price'><ion-icon name="restaurant-outline"></ion-icon>Ingrédients</span>
             </motion.div>
 
             <motion.div variants={fadeInUp} className='btn-row'>

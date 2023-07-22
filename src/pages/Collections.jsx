@@ -26,18 +26,18 @@ const Collections = () => {
 
 //animation dont work for exicting cards
     const [content , setContent] = useState(JusItems)
-    const [btnHover , setBtnHover] = useState('JUS')
+    const [btnHover , setBtnHover] = useState('Jus')
     const handleProduct = (e)=>{
         let product = e.currentTarget.innerHTML;
-        if(product=='MILK'){
+        if(product=='Lait'){
             setContent(MilkItems)
-            setBtnHover('MILK')
-        }if(product=='JUS'){
+            setBtnHover('Lait')
+        }if(product=='Jus'){
             setContent(JusItems)
-            setBtnHover('JUS')
-        }if(product=='CHESSE'){
+            setBtnHover('Jus')
+        }if(product=='Fromage'){
             setContent(ChessItems)
-            setBtnHover('CHESSE')
+            setBtnHover('Fromage')
         }if(product=='All'){
             setContent(all)
             setBtnHover('all')
@@ -113,7 +113,7 @@ const Collections = () => {
       <section className="section product">
         <div className="container">
 
-          <h2 ref={featuresRef} id='product-list'  className="h2 section-title">Bestsellers Products</h2>
+          <h2 ref={featuresRef} id='product-list'  className="h2 section-title">Les produits les plus vendus</h2>
 
           <ul className="filter-list">
 
@@ -122,15 +122,15 @@ const Collections = () => {
             </li>
 
             <li>
-              <button onClick={handleProduct} className={`filter-btn ${btnHover=='JUS' ? 'active' : ''}`} >JUS</button>
+              <button onClick={handleProduct} className={`filter-btn ${btnHover=='Jus' ? 'active' : ''}`} >Jus</button>
             </li>
 
             <li>
-              <button onClick={handleProduct}  className={`filter-btn ${btnHover=='MILK' ? 'active' : ''}`} >MILK</button>
+              <button onClick={handleProduct}  className={`filter-btn ${btnHover=='Lait' ? 'active' : ''}`} >Lait</button>
             </li>
 
             <li>
-              <button onClick={handleProduct}  className={`filter-btn ${btnHover=='CHESSE' ? 'active' : ''}`} >CHESSE</button>
+              <button onClick={handleProduct}  className={`filter-btn ${btnHover=='Fromage' ? 'active' : ''}`} >Fromage</button>
             </li>
 
           </ul>

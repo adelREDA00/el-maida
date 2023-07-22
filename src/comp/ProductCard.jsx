@@ -20,29 +20,19 @@ const ProductCard = (props) => {
               <div className="product-card" tabindex="0">
 
                 <figure className="card-banner">
+                <Link className="Link"  to={`/collections/${props.data.id}`} >
+
                   <img src={props.data.img} width="312" height="350" loading="lazy"
                     alt="Running Sneaker Shoes" className="image-contain"/>
+                    </Link>
 
                    
                 {firstDiv}
 
                   <ul className="card-action-list">
 
-                    <li className="card-action-item">
-                      <button className="card-action-btn" aria-labelledby="card-label-1">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </button>
+                
 
-                      <div className="card-action-tooltip" id="card-label-1">Add to Cart</div>
-                    </li>
-
-                    <li className="card-action-item">
-                      <button className="card-action-btn" aria-labelledby="card-label-2">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <div className="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
-                    </li>
 
                    
                     <li className="card-action-item">
@@ -62,13 +52,7 @@ const ProductCard = (props) => {
                  
                     </li>
 
-                    <li className="card-action-item">
-                      <button className="card-action-btn" aria-labelledby="card-label-4">
-                        <ion-icon name="repeat-outline"></ion-icon>
-                      </button>
-
-                      <div className="card-action-tooltip" id="card-label-4">Compare</div>
-                    </li>
+          
 
                   </ul>
 
