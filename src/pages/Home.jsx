@@ -2,21 +2,58 @@ import juiceImg from '../assets/jusorange.png'
 import leafImg from '../assets/leaf.png'
 import cowbg from '../assets/cowbg.png'
 import Dobg from '../assets/Dobg.png'
+import homeImg from '../assets/liquid-fruit.png'
+
+import apple1 from '../assets/apple1.png'
+import apple2 from '../assets/apple2.png'
+
+import orange1 from '../assets/or9.png'
+import orange2 from '../assets/or8.png'
+import ananas1 from '../assets/an9.png'
+import ananas2 from '../assets/an8.png'
+
+import peach from '../assets/peach.png'
+
+
 import cowImg from '../assets/milk.svg'
-import { motion } from "framer-motion"
+import { motion ,AnimatePresence} from "framer-motion"
+
+import prod1 from '../assets/prod1.png'
+import prod2 from '../assets/prod2.png'
+import prod3 from '../assets/prod3.png'
+import prod4 from '../assets/jusorange.png'
+
 import MaidaLogo from '../assets/maidaLogo.png'
+
+
 import myVideo from '../assets/vid.mp4';
 import { Link } from 'react-router-dom'
 import Transiton from '../comp/Transiton'
+import { useState,useEffect } from 'react'
 
 const Home = () => {
 
+  const productImages = [prod1, prod2, prod3,prod4];
+
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % productImages.length);
+    }, 3050);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
+
+
+    
     <>
       <Transiton />
 
-      <motion.div initial={{ opacity: 0, }} animate={{ opacity: 1, }}
+      <motion.div initial={{ opacity: 0}} animate={{ opacity: 1, }}
         exit={{ opacity: 0, }} transition={{ ease: "easeInOut", duration: 0.1, delay: .5 }}>
         <main className="main">
 
@@ -45,13 +82,30 @@ const Home = () => {
               </div>
 
               <div className="home__images">
-                {/*     <img src={homeImg} alt="" className="home__liquid" /> */}
+                 <img src={homeImg} alt="" className="home__liquid" /> 
+                 <AnimatePresence mode='wait'>
+                 <motion.div
+        key={currentImageIndex} // Add the key prop here
+        initial={{ opacity: 0,scale: .5 , y:50 }}
+        animate={{ opacity: 1,scale: 1, y:0 }}
+        exit={{opacity: 0, scale: .5,y:50  }}
+        transition={{ duration: .5 , ease: "easeInOut"}}
+        className="home__juice-animation"
+      >
+        <img
+          src={productImages[currentImageIndex]}
+          className="home__juice"
+          alt={`Product ${currentImageIndex + 1}`}
+        />
+      </motion.div>
+                 </AnimatePresence>
 
-                <motion.div initial={{ y: -100, opacity: 0, scale: .8 }} transition={{ type: "tween", duration: 1.4 }} animate={{ y: 0, opacity: 1, scale: 1 }} className="home__juice-animation">
-                  <img src={MaidaLogo} alt="" className="home__juice" />
-                </motion.div>
 
 
+                <motion.img initial={{ y: -100, opacity: 0 }} transition={{ type: "tween", duration: 1.2, delay: 1.2 }} animate={{ y: 15, rotate: -4, opacity: 1 }} src={apple1} alt="" className="home__apple1" /> 
+
+                <motion.img initial={{ y: -100, opacity: 0 }} transition={{ type: "tween", duration: 1.2, delay: 1 }} animate={{ y: 15, rotate: -4, opacity: 1 }} src={orange1} alt="" className="home__apple2" /> 
+             
 
                 <div>
                   <motion.img initial={{ y: -100, opacity: 0 }} transition={{ type: "tween", duration: 1.2, delay: .6 }} animate={{ y: 15, rotate: -4, opacity: 1 }} src={leafImg} alt="" className="home__leaf" />

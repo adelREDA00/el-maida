@@ -135,8 +135,8 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div class="footer-bottom">
-                    <p class="copyright">
+                <div className="footer-bottom">
+                    <p className="copyright">
                         &copy; 2023 <a href="#">@el-maida</a> All right reserved
                     </p>
                 </div>

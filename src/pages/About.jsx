@@ -5,6 +5,8 @@ import bg3 from '../assets/rb2.png'
 import bg4 from '../assets/family.jpg'
 import bg5 from '../assets/fam3.jpg'
 import bg6 from '../assets/fam2.jpg'
+
+
 import rb from '../assets/rb3.png'
 import pur from '../assets/unbg.png'
 import Transiton from '../comp/Transiton'

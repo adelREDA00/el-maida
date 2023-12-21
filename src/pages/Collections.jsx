@@ -1,9 +1,9 @@
 import React from 'react'
-import bg from '../assets/p1.png'
-import bg1 from '../assets/po2.png'
-import bg2 from '../assets/p3.png'
-import bg3 from '../assets/1p.png'
-import bg4 from '../assets/2p.png'
+import bg from '../assets/ig3.png'
+import bg1 from '../assets/ig4.png'
+import bg2 from '../assets/ig5.png'
+import bg3 from '../assets/ig1.png'
+import bg4 from '../assets/ig.png'
 import ProductCard from '../comp/ProductCard'
 import { ChessItems, MilkItems,JusItems  } from './Data';
 import cowImg from '../assets/milk.svg'
@@ -66,11 +66,24 @@ const Collections = () => {
 
           <ul className="collection-list has-scrollbar">
 
+            
+          <li>
+              <div className="collection-card" style={{backgroundImage: `url(${bg})`}}> 
+                <h3 className="card-title"></h3>
+
+                <a href="https://www.instagram.com/p/CuXbEvgt5OR/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" className="btn btn-secondary">
+                  <span>Explore All</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
             <li>
               <div className="collection-card" style={{backgroundImage: `url(${bg4})`}}> 
                 <h3 className="card-title"></h3>
 
-                <a href="#" className="btn btn-secondary">
+                <a href="https://www.instagram.com/p/CvK0c0_LlD0/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" className="btn btn-secondary">
                   <span>Explore All</span>
 
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -82,7 +95,7 @@ const Collections = () => {
               <div className="collection-card" style={{backgroundImage: `url(${bg3})`}}> 
                 <h3 className="card-title"></h3>
 
-                <a href="#" className="btn btn-secondary">
+                <a href="https://www.instagram.com/p/CvAiMacLGOy/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" className="btn btn-secondary">
                   <span>Explore All</span>
 
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -91,10 +104,22 @@ const Collections = () => {
             </li>
 
             <li>
-              <div className="collection-card" style={{backgroundImage: `url(${bg})`}}> 
+              <div className="collection-card" style={{backgroundImage: `url(${bg1})`}}> 
                 <h3 className="card-title"></h3>
 
-                <a href="#" className="btn btn-secondary">
+                <a href="https://www.instagram.com/p/CvFxQ4xrHvm/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" className="btn btn-secondary">
+                  <span>Explore All</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div className="collection-card" style={{backgroundImage: `url(${bg2})`}}> 
+                <h3 className="card-title"></h3>
+
+                <a href="https://www.instagram.com/p/CvAiMacLGOy/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" className="btn btn-secondary">
                   <span>Explore All</span>
 
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>

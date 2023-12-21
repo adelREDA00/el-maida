@@ -268,7 +268,7 @@ img {
 
 .home{
 
-  background: url("../assets/unbg.png") no-repeat;
+  //background: url("../assets/ab1.png") no-repeat;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -348,8 +348,8 @@ img {
 }
 
 .home__juice {
-  max-width: 350px;
-  left: -2rem;
+  max-width: 650px;
+  left: -10rem;
   right: 0;
   top: -1rem;
   margin: 0 auto;
@@ -484,7 +484,7 @@ img {
   }
 
   .home__juice {
-    width: 300px;
+    width: 600px;
     margin: 0 auto;
   }
 
@@ -554,8 +554,8 @@ img {
 
   .home__juice {
     max-width: 900px;
-    top: 2rem;
-    left: 1rem;
+    top: -2rem;
+    left: -14rem;
   }
 
   .home__apple1 {
